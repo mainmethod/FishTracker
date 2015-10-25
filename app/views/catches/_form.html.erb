@@ -1,0 +1,8 @@
+<div class="catch-form">
+    <%= form_for Catch.new, :remote => true do |c| %>
+        <%= c.text_area :story, :placeholder => 'Tell your story' %>
+        <%= c.submit "Submit", :class => "btn submit" %>
+        <%= c.hidden_field :lat %>
+        <%= c.hidden_field :lng %>
+    <% end %>
+</div>
